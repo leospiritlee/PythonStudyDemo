@@ -46,5 +46,5 @@ class RandomWalk():
 
     def fill_walk_v2(self):
 
-        self.get_step(self, self.x_values)
-        self.get_step(self, self.y_values)
+        self.get_step(self.x_values)
+        self.get_step(self.y_values)

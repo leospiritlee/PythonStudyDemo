@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from random_walk import RandomWalk
 
 rw = RandomWalk(5000)
-rw.fill_walk()
+rw.fill_walk_v2()
 
 # 设置绘图窗口尺寸
 plt.figure(dpi=128,figsize=(10,6))
@@ -18,5 +18,7 @@ plt.scatter(0,0, c='red',edgecolors='none',s=15)
 plt.scatter(rw.x_values[-1], rw.y_values[-1], c='green',edgecolors='none',s=15)
 
 
-plt.show()
+# plt.show()
 
+pic_name = 'squares_plot_1.png'
+plt.savefig(pic_name, bbox_inches='tight')
